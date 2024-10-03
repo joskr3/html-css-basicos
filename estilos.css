@@ -1,0 +1,147 @@
+body {
+  background-color: aquamarine;
+  color: white;
+}
+
+/* body:hover {
+  background-color: lightcoral;
+} */
+
+h1 {
+  color: black;
+  text-align: center;
+  border: 3px solid white;
+  padding: 10px;
+  margin: 10px;
+  background-color: chartreuse;
+  font-size: 32px;
+  font-weight: bold;
+  border-radius: 25px;
+}
+
+#miParrafo {
+  display: inline-block;
+  text-align: end;
+  border: 3px solid white;
+  padding: 10px;
+  margin: 10px;
+  background-color: chocolate;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.miElemento {
+  color: black;
+  border: 3px solid white;
+  background-color: yellow;
+}
+
+ul {
+  list-style-type: none;
+  display: inline-block;
+
+  li {
+    padding: 10px;
+    margin: 10px;
+  }
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+
+}
+
+section {
+  border: 3px solid white;
+  padding: 10px;
+}
+
+section>h2 {
+  color: black;
+}
+
+section p {
+  text-align: center;
+  color: tomato;
+}
+
+section p {
+  span {
+    font-weight: bold;
+    color: black
+  }
+}
+
+button:active {
+  background-color: red;
+}
+
+::selection {
+  background-color: lightblue;
+  color: white;
+}
+
+#miSpan::first-line {
+  font-size: 32px;
+  color: blue;
+}
+
+
+h1::after {
+  content: " Esta parte se agrego con CSS ->DESPUES";
+  color: red;
+}
+
+h1::before {
+  content: "Esta parte se agrego con CSS ->ANTES ";
+  color: yellow;
+}
+
+p::first-letter {
+  font-size: 2em;
+  color: royalblue;
+}
+
+#miPrimerSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.miSubseccion {
+  display: flex;
+
+}
+
+#miSegundaSeccion {
+  display: flex;
+  height: 600px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+
+#miTerceraSeccion {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-around;
+  p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: lightcoral;
+    color: white;
+    padding: 20px;
+    span {
+      color: cadetblue;
+    }
+  }
+}
