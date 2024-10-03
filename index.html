@@ -32,7 +32,7 @@
         </nav>
     </header>
     <main>
-        <img alt="Un perrito en un campo con hojas de otoño" src="https://cdn.pixabay.com/photo/2024/04/08/11/42/doggy-8683291_1280.jpg" width="300px" height="300px">
+        <img class="miImagen" alt="Un perrito en un campo con hojas de otoño" src="https://cdn.pixabay.com/photo/2024/04/08/11/42/doggy-8683291_1280.jpg" width="300px" height="300px">
         <section>
             <h1>Este es un titulo</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -46,7 +46,7 @@
                 otro texto parte de mi Docuemnto HTML
             </p>
         </section>
-        <section>
+        <section id="miSegundaSeccion">
             <h3>Este es un subtitulo</h3>
             <p>ELEMENTO 1 DE MI SEGUNDA SECCION</p>
             <p> Elemento 2 DE MI SEGUNDA SECCION</p>
@@ -55,12 +55,16 @@
         <form>
             <fieldset>
                 <label for="nombres">Nombres completos</label>
+                <label for="nombres">Nombres completos</label>
                 <input type="text" name="nombres" id="nombres" placeholder="ej, Nombres apellidos">
+                <button type="submit" name="guardar" id="guardar">
+                    Registrar
+                </button>
             </fieldset>
-
+            <!-- 
             <button type="submit">
                 Saludame
-            </button>
+            </button> -->
             <!-- <input type="submit" value="Guardar"> -->
         </form>
     </main>

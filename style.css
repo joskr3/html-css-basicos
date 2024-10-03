@@ -1,10 +1,93 @@
-body {  
-    background-color: black;
-    color: white;
+body {
+  background-color: black;
+  color: white;
 }
 
 header {
   nav {
-    border: 1px solid white ;
+    border: 1px solid white;
+    /* margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px; */
+    margin: 0px 0px 10px 0px;
+
+    ul {
+      list-style-type: none;
+
+      li {
+        display: inline-block;
+        padding: 20px;
+        border: 3px solid white;
+        margin-right: 10px;
+      }
+    }
   }
+}
+
+.miImagen {
+  width: 500px;
+  height: 300px;
+  border: 5px solid white;
+  border-radius: 250px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  background-color: blue
+}
+
+section {
+  border: 1px solid white;
+}
+
+#miSegundaSeccion {
+  border: 1px solid white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  background-color: green;
+}
+
+form fieldset {
+  border: 1px solid white;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  background-color: yellow;
+}
+
+form>fieldset>label {
+  color: red;
+}
+
+#guardar {
+  background-color: red;
+  color: white;
+  border: 5px dashed black;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 32px;
+  cursor: wait;
+}
+
+footer {
+  border: 1px solid white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  background-color: orange;
+  color: white;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
 }
