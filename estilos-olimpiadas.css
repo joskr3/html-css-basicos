@@ -11,7 +11,6 @@
 }
 
 img {
-  max-width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 5%;
@@ -19,15 +18,24 @@ img {
 
 header {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   padding: 16px;
+  top: 0;
   position: sticky;
+  z-index: 10;
 
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
 
   nav {
 
     ul {
       display: flex;
+      flex-direction: row;
       gap: 16px;
 
       li {
@@ -35,15 +43,10 @@ header {
 
         a {
           text-decoration: none;
-          color: white;
         }
       }
     }
   }
-}
-
-.logo {
-  display: flex;
 }
 
 /* ejmplos de cosas a evitar usar en css
@@ -58,15 +61,11 @@ transform: translate(0, 0); // no usar esto al menos que sean animaciones */
   h1 {
     text-align: center;
     position: relative;
-    z-index: 2;
-    top: 300px;
+    top: 250px;
     font-size: 100px;
-    color: white;
-    text-shadow: 0 0 10px black;
   }
 
   img {
-    z-index: 1;
     height: 500px;
     width: 100%;
     border-radius: 0%;
@@ -77,31 +76,19 @@ transform: translate(0, 0); // no usar esto al menos que sean animaciones */
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 16px;
+  padding: 16px;
+  margin: 100px auto;
 
   quote {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    p {
-      font-size: 50px;
-      color: white;
-      text-shadow: 0 0 10px black;
-      font-style: italic;
-      font-weight: bold;
-      margin: 0;
-      padding: 0;
-    }
+    font-size: 50px;
 
     cite {
       font-size: 30px;
-      color: white;
-      text-shadow: 0 0 10px black;
-      font-weight: bold;
-      font-style: normal;
-      margin: 0;
-      padding: 0;
     }
   }
 }
@@ -115,13 +102,10 @@ transform: translate(0, 0); // no usar esto al menos que sean animaciones */
   margin: 0 auto;
   margin-top: 16px;
   padding: 0 16px;
-  padding: 16px;
   gap: 32px;
 
   img {
     height: 250px;
-    width: auto;
-    scroll-behavior: smooth;
   }
 }
 
@@ -158,19 +142,21 @@ transform: translate(0, 0); // no usar esto al menos que sean animaciones */
   align-items: center;
   gap: 16px;
   padding: 16px;
-    h2 {
-      font-size: 50px;
-      color: white;
-      text-shadow: 0 0 10px black;
-      font-weight: bold;
-      font-style: italic;
-      margin: 0;
-      padding: 0;
-    }
-    video {
-      width: 100%;
-      height: auto;
-    }
+
+  h2 {
+    font-size: 50px;
+    color: white;
+    text-shadow: 0 0 10px black;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+  }
 }
 
 
@@ -200,13 +186,6 @@ footer {
       justify-content: center;
       align-items: center;
       gap: 16px;
-
-      img {
-        height: 50px;
-        width: 50px;
-        object-fit: cover;
-        border-radius: 50%;
-      }
     }
   }
 }
