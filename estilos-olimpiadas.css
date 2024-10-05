@@ -150,3 +150,63 @@ transform: translate(0, 0); // no usar esto al menos que sean animaciones */
 
   }
 }
+
+#videoSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+    h2 {
+      font-size: 50px;
+      color: white;
+      text-shadow: 0 0 10px black;
+      font-weight: bold;
+      font-style: italic;
+      margin: 0;
+      padding: 0;
+    }
+    video {
+      width: 100%;
+      height: auto;
+    }
+}
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+
+  p {
+    font-size: 20px;
+    color: white;
+    text-shadow: 0 0 10px black;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+  }
+
+  .social {
+    display: flex;
+    gap: 16px;
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+
+      img {
+        height: 50px;
+        width: 50px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+  }
+}
